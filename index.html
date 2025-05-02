@@ -21,18 +21,20 @@
   <body>
     <div class="container">
       <header>
-        <img src="assets/images/logo.svg" alt="Logo" />
+        <img id="logo" src="assets/images/logo.svg" alt="Logo" />
         <img
           id="menu-open-btn"
           src="assets/images/icon-menu.svg"
           alt="Button for opening menu"
         />
-        <div>
-          <img
-            id="menu-close-btn"
-            src="assets/images/icon-menu-close.svg"
-            alt="Button for closing menu"
-          />
+        <div id="navigation-container">
+          <div>
+            <img
+              id="menu-close-btn"
+              src="assets/images/icon-menu-close.svg"
+              alt="Button for closing menu"
+            />
+          </div>
           <nav>
             <a href="">Home</a>
             <a href="">New</a>
@@ -43,13 +45,13 @@
         </div>
       </header>
       <main>
-        <figure id="hero-section">
-          <img
-            src="assets/images/image-web-3-mobile.jpg"
-            alt="Image hero section"
-          />
-        </figure>
-        <section>
+        <section id="hero-section">
+          <figure>
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="Image hero section"
+            />
+          </figure>
           <h2>The Bright Future of Web 3.0?</h2>
           <div>
             <p>
@@ -60,12 +62,13 @@
             <button>Read more</button>
           </div>
         </section>
-        <aside>
+        <aside id="news-container">
           <h3>New</h3>
           <section>
             <h4>Hydrogen VS Electric Cars</h4>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </section>
+          <hr />
           <section>
             <h4>The Downsides of AI Artistry</h4>
             <p>
@@ -73,6 +76,7 @@
               generation?
             </p>
           </section>
+          <hr />
           <section>
             <h4>Is VC Funding Drying Up?</h4>
             <p>
@@ -81,7 +85,7 @@
             </p>
           </section>
         </aside>
-        <article>
+        <article id="article-container">
           <article>
             <img
               src="assets/images/image-retro-pcs.jpg"
@@ -118,5 +122,6 @@
         </article>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

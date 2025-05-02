@@ -2,4 +2,163 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+}
+
+h2, h3, h4, p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 20px;
+}
+.container header img {
+  cursor: pointer;
+}
+.container header #logo {
+  width: 45px;
+}
+.container header #navigation-container {
+  display: none;
+  background-color: hsl(36, 100%, 99%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  padding: 20px;
+}
+.container header #navigation-container div {
+  display: flex;
+  justify-content: flex-end;
+  margin-block: 15px;
+}
+.container header #navigation-container nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  row-gap: 30px;
+}
+.container header #navigation-container nav a {
+  color: hsl(240, 100%, 5%);
+  font-size: 18px;
+  text-decoration: none;
+}
+.container header #navigation-container nav a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.container main {
+  display: flex;
+  flex-direction: column;
+}
+.container main > * {
+  margin-bottom: 50px;
+}
+.container main #hero-section figure {
+  margin-inline: 0;
+}
+.container main #hero-section figure img {
+  width: 100%;
+  box-sizing: border-box;
+}
+.container main #hero-section h2 {
+  color: hsl(240, 100%, 5%);
+  font-size: 2.6em;
+  font-weight: 800;
+  line-height: 1;
+  margin-block: 20px;
+}
+.container main #hero-section div p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.75;
+  font-size: 15px;
+  font-weight: 400;
+}
+.container main #hero-section div button {
+  cursor: pointer;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.container main #hero-section div button:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+.container main #news-container {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 20px;
+}
+.container main #news-container h3 {
+  color: hsl(35, 77%, 62%);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.container main #news-container section h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.container main #news-container section h4:hover {
+  color: hsl(35, 77%, 62%);
+}
+.container main #news-container section p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.75;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(233, 8%, 79%);
+}
+.container main #news-container hr {
+  background-color: hsl(233, 8%, 79%);
+  height: 0.5px;
+  border-width: 0;
+  margin-block: 25px;
+}
+.container main #article-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.container main #article-container article {
+  display: flex;
+  column-gap: 20px;
+}
+.container main #article-container article img {
+  width: 100px;
+}
+.container main #article-container article section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main #article-container article section h2 {
+  color: hsl(5, 85%, 63%);
+  font-size: 1.7em;
+  font-weight: 800;
+}
+.container main #article-container article section h3 {
+  font-size: 1.1em;
+  font-weight: 800;
+  cursor: pointer;
+}
+.container main #article-container article section h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+.container main #article-container article section p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.75;
+  font-size: 15px;
+  font-weight: 400;
 }/*# sourceMappingURL=styles.css.map */
