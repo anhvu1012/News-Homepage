@@ -161,4 +161,24 @@ h2, h3, h4, p {
   line-height: 1.75;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  .container header #menu-open-btn {
+    display: none;
+  }
+  .container header #navigation-container {
+    display: inline;
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+  .container header #navigation-container > div:first-child {
+    display: none;
+  }
+  .container header #navigation-container nav {
+    flex-direction: row;
+    margin: 0;
+    gap: 0 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */
