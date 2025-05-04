@@ -4,7 +4,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h2, h3, h4, p {
+h2, h3, h4, p, figure {
   margin: 0;
 }
 
@@ -57,31 +57,27 @@ h2, h3, h4, p {
 .container main {
   display: flex;
   flex-direction: column;
-}
-.container main > * {
-  margin-bottom: 50px;
-}
-.container main #hero-section figure {
-  margin-inline: 0;
+  margin-top: 20px;
+  row-gap: 50px;
 }
 .container main #hero-section figure img {
   width: 100%;
   box-sizing: border-box;
 }
-.container main #hero-section h2 {
+.container main #hero-section div h2 {
   color: hsl(240, 100%, 5%);
   font-size: 2.6em;
   font-weight: 800;
   line-height: 1;
   margin-block: 20px;
 }
-.container main #hero-section div p {
+.container main #hero-section div div p {
   color: hsl(236, 13%, 42%);
   line-height: 1.75;
   font-size: 15px;
   font-weight: 400;
 }
-.container main #hero-section div button {
+.container main #hero-section div div button {
   cursor: pointer;
   background-color: hsl(5, 85%, 63%);
   border: none;
@@ -91,7 +87,7 @@ h2, h3, h4, p {
   font-weight: 700;
   letter-spacing: 4px;
 }
-.container main #hero-section div button:hover {
+.container main #hero-section div div button:hover {
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
 }
@@ -164,6 +160,15 @@ h2, h3, h4, p {
 }
 
 @media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .container header #logo {
+    width: 70px;
+  }
   .container header #menu-open-btn {
     display: none;
   }
@@ -180,5 +185,50 @@ h2, h3, h4, p {
     flex-direction: row;
     margin: 0;
     gap: 0 30px;
+  }
+  .container main {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 70px;
+    width: 1100px;
+    height: 700px;
+  }
+  .container main > * {
+    margin-bottom: 0;
+  }
+  .container main #hero-section {
+    grid-area: 1/1/2/3;
+  }
+  .container main #hero-section figure img {
+    content: url("../assets/images/image-web-3-desktop.jpg");
+  }
+  .container main #hero-section > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .container main #hero-section > div h2 {
+    font-size: 3.2em;
+    margin-block: 0;
+  }
+  .container main #news-container {
+    grid-area: 1/3/2/4;
+  }
+  .container main #article-container {
+    grid-area: 2/1/4/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0;
+    column-gap: 25px;
+  }
+  .container main #article-container article {
+    height: 120px;
+  }
+  .container main #article-container article section {
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
