@@ -1,24 +1,7 @@
-$font: 'Inter', sans-serif;
-
-$soft-orange: hsl(35, 77%, 62%);
-$soft-red: hsl(5, 85%, 63%);
-
-$off-white: hsl(36, 100%, 99%);
-$grayish-blue: hsl(233, 8%, 79%);
-$dark-grayish-blue: hsl(236, 13%, 42%);
-$very-dark-blue: hsl(240, 100%, 5%);
-
-@mixin vertical-display{
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin text{
-  color: $dark-grayish-blue;
-  line-height: 1.75;
-  font-size: 15px;
-  font-weight: 400;
-}
+@import './variables/variables';
+@import './variables/mixins';
+@import './components/header';
+@import './components/main';
 
 body{
   margin: 0;
@@ -33,179 +16,13 @@ h2, h3, h4, p, figure{
 .container {
   @include vertical-display;
   margin: 15px;
-
-  header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 20px;
-
-    img{
-      cursor: pointer;
-    }
-
-    #logo{
-      width: 45px;
-    }
-  
-    #navigation-container{
-      display: none;
-      background-color: $off-white;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 200px;
-      padding: 20px;
-
-      div{
-        display: flex;
-        justify-content: flex-end;
-        margin-block: 15px;
-      }
-
-      nav{
-        @include vertical-display;
-        margin-top: 100px;
-        row-gap: 30px;
-
-        a{
-          color: $very-dark-blue;
-          font-size: 18px;
-          text-decoration: none;
-          &:hover {
-            color: $soft-red;
-          }
-        }
-      }
-    }
-  }
-
-  main{
-    @include vertical-display;
-    margin-top: 20px;
-    row-gap: 50px;
-
-    #hero-section{
-      figure{
-        img{
-          width: 100%;
-          box-sizing: border-box;
-        }
-      }
-
-      div{
-        h2{
-          color: $very-dark-blue;
-          font-size: 2.6em;
-          font-weight: 800;
-          line-height: 1;
-          margin-block: 20px;
-        }
-  
-        div{
-          p{
-            @include text;
-          }
-  
-          button{
-            cursor: pointer;
-            background-color: $soft-red;
-            border: none;
-            padding: 15px 30px;
-            margin-top: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 4px;
-  
-            &:hover{
-              background-color: $very-dark-blue;
-              color: $off-white;
-            }
-          }
-        }
-      }
-    }
-
-    #news-container{
-      background-color: $very-dark-blue;
-      color: $off-white;
-      padding: 20px;
-
-      h3{
-        color: $soft-orange;
-        font-size: 2em;
-        margin-bottom: 20px;
-      }
-
-      section{
-        h4{
-          font-size: 20px;
-          margin-bottom: 10px;
-          cursor: pointer;
-
-          &:hover{
-            color: $soft-orange;
-          }
-        }
-        p{
-          @include text;
-          color: $grayish-blue;
-        }
-      }
-
-      hr{
-        background-color: $grayish-blue;
-        height: 0.5px;
-        border-width: 0;
-        margin-block: 25px;
-      }
-    }
-
-    #article-container{
-      @include vertical-display;
-      row-gap: 30px;
-      article{
-        display: flex;
-        column-gap: 20px;
-
-        img{
-          width: 100px;
-        }
-
-        section{
-          @include vertical-display;
-          justify-content: space-between;
-          h2{
-            color: $soft-red;
-            font-size: 1.7em;
-            font-weight: 800;
-          }
-          h3{
-            font-size: 1.1em;
-            font-weight: 800;
-            cursor: pointer;
-
-            &:hover{
-              color: $soft-red;
-            }
-          }
-
-          p{
-            @include text;
-          }
-        }
-      }
-    }
-  }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   body{
     display: flex;
-    height: 100vh;
     justify-content: center;
-    align-items: center;
+    margin: 50px auto;
   }
 
   .container{
@@ -263,12 +80,18 @@ h2, h3, h4, p, figure{
         &>div{
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          column-gap: 30px;
+          column-gap: 50px;
           margin-top: 20px;
 
           h2{
-            font-size: 3.2em;
+            font-size: 3.6em;
             margin-block: 0;
+          }
+
+          div{
+            button{
+              margin-top: 30px;
+            }
           }
         }
       }
