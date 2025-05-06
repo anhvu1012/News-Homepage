@@ -82,17 +82,17 @@
   color: hsl(36, 100%, 99%);
   padding: 20px;
 }
-.container main #news-container h3 {
+.container main #news-container h2 {
   color: hsl(35, 77%, 62%);
   font-size: 2em;
   margin-bottom: 20px;
 }
-.container main #news-container section h4 {
+.container main #news-container section h3 {
   font-size: 20px;
   margin-bottom: 10px;
   cursor: pointer;
 }
-.container main #news-container section h4:hover {
+.container main #news-container section h3:hover {
   color: hsl(35, 77%, 62%);
 }
 .container main #news-container section p {
