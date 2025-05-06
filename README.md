@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [GitHub Page]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-DJPHHsOZPs)
+- Live Site URL: [GitHub Page](https://anhvu1012.github.io/News-Homepage/)
 
 ## My process
 
