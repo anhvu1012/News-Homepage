@@ -50,7 +50,7 @@
   width: 100%;
   box-sizing: border-box;
 }
-.container main #hero-section div h2 {
+.container main #hero-section div h1 {
   color: hsl(240, 100%, 5%);
   font-size: 2.6em;
   font-weight: 800;
@@ -151,7 +151,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h2, h3, h4, p, figure {
+h1, h2, h3, h4, p, figure {
   margin: 0;
 }
 
@@ -212,7 +212,7 @@ h2, h3, h4, p, figure {
     column-gap: 50px;
     margin-top: 20px;
   }
-  .container main #hero-section > div h2 {
+  .container main #hero-section > div h1 {
     font-size: 3.6em;
     margin-block: 0;
   }

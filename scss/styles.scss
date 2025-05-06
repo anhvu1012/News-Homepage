@@ -9,7 +9,7 @@ body{
   font-family: $font; // p 15px, weight: 400, 700, 800
 }
 
-h2, h3, h4, p, figure{
+h1, h2, h3, h4, p, figure{
   margin: 0
 }
 
@@ -83,7 +83,7 @@ h2, h3, h4, p, figure{
           column-gap: 50px;
           margin-top: 20px;
 
-          h2{
+          h1{
             font-size: 3.6em;
             margin-block: 0;
           }
